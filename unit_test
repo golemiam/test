@@ -1,0 +1,51 @@
+def main():
+
+    stub_sample()
+    test_case_sample()
+
+def stub_sample():
+    """
+    This does not actually work for testing but is only for trying to briefly explain the function of a stub.
+    :return:
+    """
+    inner = input("Please input value from code. ")
+    if inner.lower() == 'First'.lower():
+        response = print('Bobberino ')
+    elif inner.lower() == 'Last'.lower():
+        response = print("Vendi ")
+    else:
+        print("This stub is designed for names only. ")
+    return response
+
+def test_case_sample():
+    """
+    Uses inputs instead of website integration, only for sample to verify understanding. Pretend csv's via variables are created.
+    :return:
+    """
+    inner = input("Please input requirement. ")
+    if inner.lower() == "Caps".lower():
+        # Read CSV, create csv variable
+        csv = "SAMPLE"
+        if csv == csv.upper():
+            print("Looks good ")
+        else:
+            print("Nope ")
+    elif inner.lower() == "lowercase".lower():
+        csv = "SAMPLE"
+        if csv == csv.lower():
+            print("Looks good ")
+        else:
+            print("Nope ")
+    else:
+        pass
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    main()
